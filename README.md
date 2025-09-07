@@ -27,16 +27,17 @@ Each page shares a consistent layout, responsive design, and accessible navigati
 ---
 
 ## 📁 File Structure
-portfolio-website/
-├── index.html
-├── about.html
-├── projects.html
-├── services.html
-├── contact.html
+📦 Gervásio-Portfolio-Website/
+├── index.html           # Homepage
+├── about.html           # About section
+├── projects.html        # Showcase of your work
+├── services.html        # Consulting and offerings
+├── contact.html         # Contact form with validation
 ├── css/
-│   └── styles.css
+│   └── styles.css       # Shared styling across all pages
 ├── js/
-│   └── script.js
+│   └── script.js        # JavaScript for interactivity (e.g. form handling)
+└── README.md            # Project overview, purpose, and deployment info
 
 ---
 
