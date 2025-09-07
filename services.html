@@ -10,7 +10,9 @@
   <title>Services | Gervásio Portfolio</title>
 </head>
 <body>
-  <header>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header role="banner">
     <nav aria-label="Main navigation">
       <ul class="nav">
         <li><a href="index.html">Home</a></li>
@@ -22,8 +24,8 @@
     </nav>
   </header>
 
-  <main>
-    <section aria-labelledby="services-heading">
+  <main id="main-content" role="main">
+    <section class="fade-in text-center" aria-labelledby="services-heading">
       <h1 id="services-heading">My Services</h1>
       <ul>
         <li><strong>UX Audits</strong> — Accessibility-first evaluations</li>
@@ -35,9 +37,12 @@
         “Design is inclusion. Code is clarity.”
       </blockquote>
     </section>
+    <section class="text-center mt-2">
+      <button id="themeToggle" class="btn">Toggle Theme</button>
+    </section>
   </main>
 
-  <footer>
+  <footer role="contentinfo">
     <p>&copy; 2025 Gervásio. All rights reserved.</p>
   </footer>
 
