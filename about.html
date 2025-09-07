@@ -10,7 +10,9 @@
   <title>About | Gervásio Portfolio</title>
 </head>
 <body>
-  <header>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header role="banner">
     <nav aria-label="Main navigation">
       <ul class="nav">
         <li><a href="index.html">Home</a></li>
@@ -22,8 +24,8 @@
     </nav>
   </header>
 
-  <main>
-    <section aria-labelledby="about-heading">
+  <main id="main-content" role="main">
+    <section class="fade-in text-center" aria-labelledby="about-heading">
       <h1 id="about-heading">About Me</h1>
       <p>I’m Gervásio, a Master’s student in Entrepreneurship & Project Management for Social Inclusion. I specialize in UX, onboarding, and digital solutions for international students.</p>
       <button id="showSkills" class="btn" aria-expanded="false" aria-controls="skillsList">Show Skills</button>
@@ -34,9 +36,12 @@
         <li>GitHub deployment</li>
       </ul>
     </section>
+    <section class="text-center mt-2">
+      <button id="themeToggle" class="btn">Toggle Theme</button>
+    </section>
   </main>
 
-  <footer>
+  <footer role="contentinfo">
     <p>&copy; 2025 Gervásio. All rights reserved.</p>
   </footer>
 
