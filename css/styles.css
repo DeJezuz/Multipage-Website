@@ -1,9 +1,9 @@
 :root {
-  --color-primary: #0077cc;
-  --color-accent: #ff6f61;
-  --color-bg: #f9f9f9;
-  --color-text: #333;
-  --transition-fast: 0.3s ease;
+  --primary: #0077cc;
+  --accent: #ff6f61;
+  --bg: #f9f9f9;
+  --text: #333;
+  --transition: 0.3s ease;
 }
 
 * {
@@ -13,13 +13,13 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: var(--color-bg);
-  color: var(--color-text);
+  background-color: var(--bg);
+  color: var(--text);
   line-height: 1.6;
 }
 
 header {
-  background-color: var(--color-primary);
+  background-color: var(--primary);
   padding: 1rem;
 }
 
@@ -36,11 +36,13 @@ header {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
-  transition: color var(--transition-fast);
+  transition: color var(--transition);
 }
 
-.nav a:hover {
-  color: var(--color-accent);
+.nav a:hover,
+.nav a:focus-visible {
+  color: var(--accent);
+  outline: none;
 }
 
 main {
@@ -55,17 +57,19 @@ main {
 }
 
 .btn {
-  background-color: var(--color-accent);
+  background-color: var(--accent);
   color: #fff;
   border: none;
   padding: 0.75rem 1.5rem;
   border-radius: 4px;
   cursor: pointer;
-  transition: background var(--transition-fast);
+  transition: background var(--transition);
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus-visible {
   background-color: #e85c50;
+  outline: none;
 }
 
 .hidden {
