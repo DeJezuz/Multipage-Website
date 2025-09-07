@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Gervásio's portfolio showcasing UX, onboarding, and web development projects." />
+  <meta name="description" content="Gervásio’s portfolio: UX, onboarding, and web development for inclusive digital experiences." />
   <meta name="author" content="Gervásio" />
   <link rel="canonical" href="https://dejezuz.github.io/Portfolio-Website/index.html" />
   <link rel="icon" href="assets/favicon.ico" />
@@ -11,7 +11,9 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header role="banner">
     <nav aria-label="Main navigation">
       <ul class="nav">
         <li><a href="index.html" aria-current="page">Home</a></li>
@@ -23,19 +25,43 @@
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Digital Inclusion Through UX & Strategy</h1>
-      <p>Crafting accessible, responsive, and user-centered web experiences.</p>
+  <main id="main-content" role="main">
+    <section class="hero fade-in" aria-labelledby="hero-heading">
+      <h1 id="hero-heading">Crafting Digital Experiences That Include, Inspire, and Scale</h1>
+      <p>From onboarding flows to enterprise-grade UX, I build web solutions that empower global users.</p>
       <button id="toggleIntro" class="btn" aria-expanded="false" aria-controls="introText">Learn More</button>
       <div id="introText" class="hidden" aria-live="polite">
-        <p>This portfolio showcases my work in semantic development, onboarding flows, and inclusive design.</p>
+        <p>This portfolio showcases my work in semantic development, onboarding strategy, and inclusive design systems.</p>
       </div>
+    </section>
+
+    <section class="grid-2 fade-in" aria-labelledby="features-heading">
+      <h2 id="features-heading" class="text-center mt-2">What I Deliver</h2>
+      <div>
+        <h3>Responsive Design</h3>
+        <p>Mobile-first layouts that adapt seamlessly across devices.</p>
+      </div>
+      <div>
+        <h3>Accessible UX</h3>
+        <p>WCAG-compliant interfaces with ARIA roles and keyboard support.</p>
+      </div>
+      <div>
+        <h3>Modular Code</h3>
+        <p>Clean, reusable components built for scalability and clarity.</p>
+      </div>
+      <div>
+        <h3>Strategic Storytelling</h3>
+        <p>Content that connects users to purpose, product, and impact.</p>
+      </div>
+    </section>
+
+    <section class="text-center mt-2">
+      <button id="themeToggle" class="btn">Toggle Theme</button>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Gervásio. Built with HTML5, CSS3, and JavaScript.</p>
+  <footer role="contentinfo">
+    <p>&copy; 2025 Gervásio. Built with HTML5, CSS3, and JavaScript. Hosted on GitHub Pages.</p>
   </footer>
 
   <script src="js/main.js" defer></script>
