@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gervásio's portfolio showcasing UX, onboarding, and web development projects." />
+  <meta name="author" content="Gervásio" />
+  <link rel="canonical" href="https://dejezuz.github.io/Portfolio-Website/index.html" />
+  <link rel="icon" href="assets/favicon.ico" />
   <title>Home | Gervásio Portfolio</title>
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="assets/favicon.ico" />
 </head>
 <body>
-  <header role="banner">
-    <nav role="navigation" aria-label="Main Navigation">
+  <header>
+    <nav aria-label="Main navigation">
       <ul class="nav">
         <li><a href="index.html" aria-current="page">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -20,18 +23,18 @@
     </nav>
   </header>
 
-  <main role="main">
+  <main>
     <section class="hero">
       <h1>Digital Inclusion Through UX & Strategy</h1>
       <p>Crafting accessible, responsive, and user-centered web experiences.</p>
-      <button id="toggleIntro" class="btn">Learn More</button>
+      <button id="toggleIntro" class="btn" aria-expanded="false" aria-controls="introText">Learn More</button>
       <div id="introText" class="hidden" aria-live="polite">
         <p>This portfolio showcases my work in semantic development, onboarding flows, and inclusive design.</p>
       </div>
     </section>
   </main>
 
-  <footer role="contentinfo">
+  <footer>
     <p>&copy; 2025 Gervásio. Built with HTML5, CSS3, and JavaScript.</p>
   </footer>
 
