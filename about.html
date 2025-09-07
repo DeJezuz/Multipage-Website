@@ -3,18 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Gervásio Portfolio</title>
+  <meta name="description" content="Learn more about Gervásio—UX consultant and web developer focused on digital inclusion." />
+  <meta name="author" content="Gervásio" />
+  <link rel="canonical" href="https://dejezuz.github.io/Portfolio-Website/about.html" />
   <link rel="stylesheet" href="css/styles.css" />
+  <title>About | Gervásio Portfolio</title>
 </head>
 <body>
-  <header>...same nav...</header>
+  <header>
+    <nav aria-label="Main navigation">
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
     <section>
       <h1>About Me</h1>
-      <p>I’m a Master’s student in Entrepreneurship & Project Management for Social Inclusion. I specialize in UX, onboarding, and digital solutions for international students.</p>
-      <button id="showSkills" class="btn">Show Skills</button>
-      <ul id="skillsList" class="hidden">
+      <p>I’m Gervásio, a Master’s student in Entrepreneurship & Project Management for Social Inclusion. I specialize in UX, onboarding, and digital solutions for international students.</p>
+      <button id="showSkills" class="btn" aria-expanded="false" aria-controls="skillsList">Show Skills</button>
+      <ul id="skillsList" class="hidden" aria-live="polite">
         <li>Semantic HTML5</li>
         <li>CSS3 transitions & layout</li>
         <li>Modular JavaScript</li>
@@ -23,7 +36,10 @@
     </section>
   </main>
 
-  <footer>...same footer...</footer>
+  <footer>
+    <p>&copy; 2025 Gervásio. All rights reserved.</p>
+  </footer>
+
   <script src="js/main.js" defer></script>
 </body>
 </html>
