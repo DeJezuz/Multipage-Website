@@ -2,10 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const root = document.documentElement;
   const themeToggle = document.getElementById('themeToggle');
 
-  // Load saved theme
+  // Detect system preference if no saved theme
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme) {
     root.setAttribute('data-theme', savedTheme);
+  } else {
+    root.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
   }
 
   // Toggle theme on click
@@ -59,4 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
       submitted = false;
     });
   }
+
+  // Add aria-current to active nav link
+  document.querySelectorAll('.nav a').forEach(link => {
+    if (link.href === window.location.href) {
+      link.setAttribute('aria-current', 'page');
+    }
+  });
 });
