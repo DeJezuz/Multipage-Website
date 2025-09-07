@@ -1,4 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const root = document.documentElement;
+  const themeToggle = document.getElementById('themeToggle');
+
+  // Load saved theme
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    root.setAttribute('data-theme', savedTheme);
+  }
+
+  // Toggle theme on click
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const current = root.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+  }
+
   // Toggle visibility with ARIA sync
   function toggleVisibility(triggerId, targetId) {
     const trigger = document.getElementById(triggerId);
@@ -38,21 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
       alert('Thank you! Your message has been sent.');
       form.reset();
       submitted = false;
-    });
-  }
-
-  // Dark mode toggle with persistence
-  const themeToggle = document.getElementById('themeToggle');
-  const root = document.documentElement;
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme) root.setAttribute('data-theme', savedTheme);
-
-  if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-      const current = root.getAttribute('data-theme');
-      const next = current === 'dark' ? 'light' : 'dark';
-      root.setAttribute('data-theme', next);
-      localStorage.setItem('theme', next);
     });
   }
 });
