@@ -64,7 +64,7 @@ Each page shares a consistent layout, responsive design, and accessible navigati
 
 ## 🌍 Live Site
 
-🔗 [View the deployed website]([https://your-github-username.github.io/portfolio-website](https://dejezuz.github.io/Multipage-Website/))  
+🔗 [View the deployed website]([https://dejezuz.github.io/Multipage-Website/]())  
 *(Replace with your actual GitHub Pages URL)*
 
 ---
