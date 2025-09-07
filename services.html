@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>...same head...</head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover Gervásio’s consulting services in UX, onboarding, and accessibility." />
+  <meta name="author" content="Gervásio" />
+  <link rel="canonical" href="https://dejezuz.github.io/Portfolio-Website/services.html" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Services | Gervásio Portfolio</title>
+</head>
 <body>
-  <header>...same nav...</header>
+  <header>
+    <nav aria-label="Main navigation">
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html" aria-current="page">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
     <section>
-      <h1>Services</h1>
+      <h1>My Services</h1>
       <ul>
-        <li>UX Audits</li>
-        <li>Onboarding Strategy</li>
-        <li>Web Accessibility Reviews</li>
+        <li><strong>UX Audits</strong> — Accessibility-first evaluations</li>
+        <li><strong>Onboarding Strategy</strong> — Digital flows for student integration</li>
+        <li><strong>Web Development</strong> — Semantic, responsive, and scalable code</li>
       </ul>
-      <button id="toggleQuote" class="btn">Why I Do This</button>
-      <blockquote id="quote" class="hidden">
+      <button id="toggleQuote" class="btn" aria-expanded="false" aria-controls="quote">Why I Do This</button>
+      <blockquote id="quote" class="hidden" aria-live="polite">
         “Design is inclusion. Code is clarity.”
       </blockquote>
     </section>
   </main>
 
-  <footer>...same footer...</footer>
+  <footer>
+    <p>&copy; 2025 Gervásio. All rights reserved.</p>
+  </footer>
+
   <script src="js/main.js" defer></script>
 </body>
 </html>
