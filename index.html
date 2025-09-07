@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gervásio | Portfolio</title>
+  <title>Home | Gervásio Portfolio</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/favicon.ico" />
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
+  <header role="banner">
+    <nav role="navigation" aria-label="Main Navigation">
+      <ul class="nav">
+        <li><a href="index.html" aria-current="page">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="services.html">Services</a></li>
@@ -19,18 +20,21 @@
     </nav>
   </header>
 
-  <main>
+  <main role="main">
     <section class="hero">
-      <h1>Welcome to My Portfolio</h1>
-      <p>UX, onboarding, and digital inclusion for international students.</p>
-      <a href="projects.html" class="btn">Explore Projects</a>
+      <h1>Digital Inclusion Through UX & Strategy</h1>
+      <p>Crafting accessible, responsive, and user-centered web experiences.</p>
+      <button id="toggleIntro" class="btn">Learn More</button>
+      <div id="introText" class="hidden" aria-live="polite">
+        <p>This portfolio showcases my work in semantic development, onboarding flows, and inclusive design.</p>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Gervásio. All rights reserved.</p>
+  <footer role="contentinfo">
+    <p>&copy; 2025 Gervásio. Built with HTML5, CSS3, and JavaScript.</p>
   </footer>
 
-  <script src="js/script.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
