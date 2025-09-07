@@ -23,19 +23,21 @@
   </header>
 
   <main>
-    <section>
-      <h1>Featured Projects</h1>
+    <section aria-labelledby="projects-heading">
+      <h1 id="projects-heading">Featured Projects</h1>
+
       <div class="project">
         <h2>Interactive UI System</h2>
         <p>CSS3 transitions + JavaScript logic for responsive animations.</p>
-        <button class="btn reveal" aria-expanded="false">Details</button>
-        <p class="hidden">Built with scoped JS functions and accessibility-first design.</p>
+        <button class="btn reveal" aria-expanded="false" aria-controls="details1">Details</button>
+        <p id="details1" class="hidden" aria-live="polite">Built with scoped JS functions and accessibility-first design.</p>
       </div>
+
       <div class="project">
         <h2>Onboarding Dashboard</h2>
         <p>Designed for international student integration and support.</p>
-        <button class="btn reveal" aria-expanded="false">Details</button>
-        <p class="hidden">Includes form validation, toggle menus, and responsive layout.</p>
+        <button class="btn reveal" aria-expanded="false" aria-controls="details2">Details</button>
+        <p id="details2" class="hidden" aria-live="polite">Includes form validation, toggle menus, and responsive layout.</p>
       </div>
     </section>
   </main>
