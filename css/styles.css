@@ -134,6 +134,12 @@ footer {
   padding: 2rem;
   background-color: #eee;
   font-size: 0.875rem;
+  color: var(--text);
+}
+
+[data-theme="dark"] footer {
+  background-color: #1a1a1a;
+  color: #fff;
 }
 
 .skip-link {
