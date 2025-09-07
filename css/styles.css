@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap');
 
 :root {
-  --primary: #0077cc;
-  --accent: #ff6f61;
   --bg: #f9f9f9;
   --text: #333;
+  --primary: #0077cc;
+  --accent: #ff6f61;
   --transition: 0.3s ease;
 }
 
