@@ -1,26 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const root = document.documentElement;
-  const themeToggle = document.getElementById('themeToggle');
-
-  // Detect system preference if no saved theme
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme) {
-    root.setAttribute('data-theme', savedTheme);
-  } else {
-    root.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
-  }
-
-  // Toggle theme on click
-  if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-      const current = root.getAttribute('data-theme');
-      const next = current === 'dark' ? 'light' : 'dark';
-      root.setAttribute('data-theme', next);
-      localStorage.setItem('theme', next);
-    });
-  }
-
   // Toggle visibility with ARIA sync
   function toggleVisibility(triggerId, targetId) {
     const trigger = document.getElementById(triggerId);
