@@ -2,16 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap');
 
 :root {
-  --bg: #f9f9f9;
-  --text: #333;
   --primary: #0077cc;
   --accent: #ff6f61;
   --transition: 0.3s ease;
-}
-
-[data-theme="dark"] {
-  --bg: #121212;
-  --text: #eee;
 }
 
 * {
@@ -21,8 +14,8 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: var(--bg);
-  color: var(--text);
+  background-color: #f9f9f9;
+  color: #333;
   line-height: 1.6;
   transition: background-color var(--transition), color var(--transition);
 }
@@ -134,12 +127,7 @@ footer {
   padding: 2rem;
   background-color: #eee;
   font-size: 0.875rem;
-  color: var(--text);
-}
-
-[data-theme="dark"] footer {
-  background-color: #1a1a1a;
-  color: #000;
+  color: #333;
 }
 
 .skip-link {
